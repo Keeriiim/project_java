@@ -22,29 +22,28 @@ public class authController {
             return "redirect:/login";
         }
     }
-/*
+
     @PostMapping("/register")
-    public String register() {
-       /*  // Check if email is already registered
+    public String register(@RequestParam String email, @RequestParam String password, RedirectAttributes redirectAttributes, Model model) {
+         // Check if email is already registered
         // if yes, send back error
         if (email.equals("admin@gmail.com")) {
             redirectAttributes.addFlashAttribute("condition", Boolean.TRUE);
             redirectAttributes.addFlashAttribute("error", "Email already registered");
-            return "redirect:/register";
+            return "redirect:/account";
         // else redirect to account page
     }
 
         else {
             redirectAttributes.addFlashAttribute("condition", Boolean.TRUE);
-            redirectAttributes.addFlashAttribute("message", "Registration Successful");
+            redirectAttributes.addFlashAttribute("message", "Registration successful");
             return "redirect:/account";
         }
 
 
-        return "";
     }
 
-    */
+
 
 
 
