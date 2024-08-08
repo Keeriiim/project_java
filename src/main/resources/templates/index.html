@@ -21,8 +21,7 @@
 <body>
 
     <!-- Navbar -->
-    <!-- Include the header fragment -->
-    <nav th:replace="fragments/header.html::headerbar"></nav>
+    <nav th:replace="~{fragments/header.html::headerbar}"></nav>
 
 
         <!-- Home -->
@@ -170,7 +169,7 @@
 
 
       <!-- Footer -->
-    <footer th:replace="fragments/footer::footerbar"></footer>
+    <footer th:replace="~{fragments/footer::footerbar}"></footer>
 
 
 

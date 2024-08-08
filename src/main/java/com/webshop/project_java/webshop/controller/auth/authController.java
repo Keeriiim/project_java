@@ -21,6 +21,46 @@ public class authController {
             redirectAttributes.addFlashAttribute("condition", Boolean.TRUE);
             return "redirect:/login";
         }
+    }
+/*
+    @PostMapping("/register")
+    public String register() {
+       /*  // Check if email is already registered
+        // if yes, send back error
+        if (email.equals("admin@gmail.com")) {
+            redirectAttributes.addFlashAttribute("condition", Boolean.TRUE);
+            redirectAttributes.addFlashAttribute("error", "Email already registered");
+            return "redirect:/register";
+        // else redirect to account page
+    }
+
+        else {
+            redirectAttributes.addFlashAttribute("condition", Boolean.TRUE);
+            redirectAttributes.addFlashAttribute("message", "Registration Successful");
+            return "redirect:/account";
+        }
+
+
+        return "";
+    }
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* IMPORTANT NOTE:
         1. If you redirect, you cannot add anything after ex /login in the URL.
@@ -32,7 +72,7 @@ public class authController {
 
         3.
          */
-    }
+
 
 
 }
